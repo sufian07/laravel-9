@@ -52,7 +52,7 @@ class EmailController extends Controller
         // TODO: Create implementation for storeEmail and uncomment the following line
         $results = $elasticsearchHelper->listEmail($page, $perPage);
         return response()->json([
-                'message' => 'Emails are scheduled to be sent successfully',
+                'message' => 'Emails found',
                 'total' => $results['hits']['total']['value'],
                 'page' => $page,
                 'per_page' => $perPage,
