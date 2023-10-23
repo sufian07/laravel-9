@@ -10,8 +10,9 @@ interface RedisHelperInterface {
      *
      * @param  mixed  $id
      * @param  string  $messageSubject
+     * @param  string  $messageBody
      * @param  string  $toEmailAddress
      * @return void
      */
-    public function storeRecentMessage(mixed $id, string $messageSubject, string $toEmailAddress): void;
+    public function storeRecentMessage(mixed $id, string $messageSubject, string $messageBody, string $toEmailAddress): void;
 }
